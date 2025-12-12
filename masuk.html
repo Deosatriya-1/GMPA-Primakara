@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GMPA Primakara 2025</title>
+    <link rel="stylesheet" href="masuk.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="card shadow-lg card position-absolute top-50 start-50 translate-middle border border-primary" style="width: 20rem;">
+        <img src="/gambar/GMPA univ.jpg" class="card-img-top" alt="logo-gmpa">
+        <div class="card-body">
+        <h5 class="tittle-masuk">Selamat Datang Pengurus GMPA Primakara 2025</h5>
+            <div class="nama pt-3">
+              <label for="nama">Masukan Nama Panggilan Kamu</label> <br />
+              <input id="nama" type="text" class="form-control" placeholder="Nama" aria-label="Nama" aria-describedby="basic-addon1">
+            </div>
+            <div class="submit pt-3">
+            <button class="btn btn-primary" onclick="masuk()">Masuk</button>
+          </div>
+        </div>
+    </div>
+
+    <script>
+    function masuk() {
+        const nama = document.getElementById("nama").value;
+
+        if (nama.trim() === "") {
+            alert("Mohon isi nama terlebih dahulu.");
+            return;
+        }
+
+        // Simpan nama ke localStorage agar bisa dipakai di halaman berikutnya
+        localStorage.setItem("namaUser", nama);
+
+        // Pindah ke halaman kedua
+        window.location.href = "ucapan.html";
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

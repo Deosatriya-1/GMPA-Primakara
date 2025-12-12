@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GMPA Primakara 2025</title>
+
+    <link rel="stylesheet" href="masuk.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  </head>
+  <body>
+        <div class="container mt-5">
+            <div class="card-ucapan card shadow-lg border border-primary rounded-4">
+                <img src="/gambar/GMPA univpng.png" class="mt-5 placeholder-glow" alt="logo-gmpa" style="width: 20rem;">
+                <div class="card-body p-4">
+                    <div class="row align-items-center">
+                        <!-- Kolom Kiri (Ucapan) -->
+                        <div class="ucapan col-md-6">
+                            <h1 id="sapaan" class="fw-bold mb-3"></h1>
+
+                            <p>
+                                Terima kasih yang sebesar-besarnya kepada kamu selaku pengurus 
+                                <strong>GMPA Primakara 2025</strong> atas dedikasi, komitmen, dan kerja keras yang telah diberikan 
+                                selama satu tahun masa bakti. Setiap langkah, kontribusi, serta waktu yang dicurahkan menjadi 
+                                fondasi penting bagi perkembangan organisasi ini.
+                            </p>
+
+                            <p>
+                                Kami mengapresiasi profesionalisme, semangat kebersamaan, serta upaya tanpa henti dalam menjalankan 
+                                setiap program dan kegiatan. Perjalanan satu tahun ini telah membentuk pengalaman berharga yang akan 
+                                terus diingat.
+                            </p>
+
+                            <p>
+                                Semoga segala kontribusi yang diberikan menjadi amal baik dan menjadi bagian dari perjalanan luar biasa 
+                                kalian sebagai pemimpin muda. Terima kasih atas pengabdian yang tulus untuk GMPA Primakara.
+                            </p>
+
+                            <p class="mt-3">Salam hangat,<br><strong>GMPA Primakara</strong></p>
+                            <p class="tagline"><i>#lestarijaya</i></p>
+                        </div>
+
+                        <!-- Kolom Kanan (Video) -->
+                        <div class="col-md-6 text-center">
+                            <div class="ratio ratio-4x3 rounded-3 shadow-sm">
+                                <!-- <iframe
+                                    src="https://drive.google.com/file/d/18GSshtUZ5tC88cjxVes8bi1E5PR28vfd/preview?autoplay=1&mute=1&loop=1&playlist=FILE_ID" 
+                                    title="Video Rekap Kebersamaan GMPA Primakara"
+                                    allowfullscreen
+                                    allow="autoplay">
+                                </iframe> -->
+                                <video autoplay loop src="/video/KENANGAN WEB.mp4"></video>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="lagu">
+        <audio autoplay src="/song/RibuanMemori.mp3"></audio>
+    </div>
+    <script>
+        const nama = localStorage.getItem("namaUser");
+        document.getElementById("sapaan").textContent = "Hallo " + nama + "!";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
